@@ -39,7 +39,7 @@ ROMs should be placed in `/Assets/supervision/common`
 
 - [Jamie Blanks](https://github.com/Kitrinx)
 - [Jens Gutschmidt](https://opencores.org/projects/cpu65c02_true_cycle)
-- [Osman Celimli]
+- [Osman Celimli](http://www.tailchao.com/index.php)
 - [Pierre Cornier]
 - [Trash Uncle](https://github.com/trashuncle/Gameboy_Palettes)
 
