@@ -1,0 +1,35 @@
+{
+    "name": "supervision",
+    "displayName": "supervision",
+    "description": "Watara SuperVision",
+    "author": "boogermann",
+    "version": "0.1.0",
+    "license": "GPL-3.0-or-later",
+    "repository": "https://github.com/opengateware/console-supervision",
+    "keywords": [
+        "ecosystem:gateman"
+    ],
+    "scripts": {
+        "verilator": "echo \"Error: no simulation specified\" && exit 1",
+        "build:pocket": "quartus_sh --flow compile projects/supervision_pocket.qpf",
+        "program:pocket": "quartus_pgm -m jtag -c 1 -o \"p;projects/output_files/supervision_pocket.sof@1\""
+    },
+    "hardware": {
+        "id": "supervision",
+        "name": "Supervision",
+        "year": 1992,
+        "manufacturer": "Watara"
+    },
+    "platforms": {
+        "pocket": "1.1.1"
+    },
+    "modules": {
+        "cpu-r65c02_tc": "1.5.2",
+        "general-sync_fifo": "0.1.0",
+        "pocket-dataloader": "1.0.0",
+        "pocket-i2s": "1.0.0",
+        "pocket-joypad": "1.0.0",
+        "pocket-video": "1.0.0",
+        "video-scanlines": "0.1.0"
+    }
+}

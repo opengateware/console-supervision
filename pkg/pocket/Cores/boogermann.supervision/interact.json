@@ -1,0 +1,149 @@
+{
+    "interact": {
+        "magic": "APF_VER_1",
+        "variables": [
+            {
+                "name": "Reset Core",
+                "id": 1,
+                "type": "action",
+                "enabled": true,
+                "address": "0xF0000000",
+                "value": 1
+            },
+            {
+                "name": "Flickerblend",
+                "id": 2,
+                "type": "check",
+                "enabled": true,
+                "persist": true,
+                "address": "0xF1000000",
+                "mask": "0xFFFFFFF0",
+                "value": "0x000F"
+            },
+            {
+                "name": "60Hz Mode",
+                "id": 3,
+                "type": "check",
+                "enabled": true,
+                "persist": true,
+                "address": "0xF1000000",
+                "mask": "0xFFFFFF0F",
+                "value": "0x00F0"
+            },
+            {
+                "name": "Custom Palette",
+                "id": 4,
+                "type": "check",
+                "enabled": true,
+                "persist": true,
+                "address": "0xF1000000",
+                "mask": "0xFFFFF0FF",
+                "value": "0x0F00"
+            },
+            {
+                "name": "Palettes",
+                "id": 5,
+                "type": "list",
+                "enabled": true,
+                "persist": true,
+                "address": "0xF2000000",
+                "defaultval": 0,
+                "mask": "0xFFFFFFF0",
+                "options": [
+                    {
+                        "name": "Andrade",
+                        "value": 0
+                    },
+                    {
+                        "name": "Biverted",
+                        "value": 1
+                    },
+                    {
+                        "name": "DMG",
+                        "value": 2
+                    },
+                    {
+                        "name": "SGB Default",
+                        "value": 3
+                    },
+                    {
+                        "name": "Blueberry Crush",
+                        "value": 4
+                    },
+                    {
+                        "name": "DMG Bright",
+                        "value": 5
+                    },
+                    {
+                        "name": "DMG Clean",
+                        "value": 6
+                    },
+                    {
+                        "name": "DMG Weak",
+                        "value": 7
+                    },
+                    {
+                        "name": "GBP Bright",
+                        "value": 8
+                    },
+                    {
+                        "name": "GBP Clean",
+                        "value": 9
+                    },
+                    {
+                        "name": "GBP Weak",
+                        "value": 10
+                    },
+                    {
+                        "name": "Grape Crush",
+                        "value": 11
+                    },
+                    {
+                        "name": "Orange Crush",
+                        "value": 12
+                    },
+                    {
+                        "name": "Paisley Park",
+                        "value": 13
+                    },
+                    {
+                        "name": "Quicksilver",
+                        "value": 14
+                    },
+                    {
+                        "name": "Strawberry Crush",
+                        "value": 15
+                    }
+                ]
+            },
+            {
+                "name": "Scanlines",
+                "id": 100,
+                "type": "list",
+                "enabled": true,
+                "persist": true,
+                "address": "0xF3000000",
+                "defaultval": 0,
+                "options": [
+                    {
+                        "name": "Disabled",
+                        "value": 0
+                    },
+                    {
+                        "name": "Soft (25%)",
+                        "value": 1
+                    },
+                    {
+                        "name": "Medium (50%)",
+                        "value": 2
+                    },
+                    {
+                        "name": "Hard (75%)",
+                        "value": 3
+                    }
+                ]
+            }
+        ],
+        "messages": []
+    }
+}
