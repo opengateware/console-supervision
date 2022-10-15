@@ -12,17 +12,6 @@
                     "bin"
                 ],
                 "address": "0x00000000"
-            },
-            {
-                "name": "Palette",
-                "id": 100,
-                "required": false,
-                "parameters": 3,
-                "extensions": [
-                    "gbp",
-                    "sgb"
-                ],
-                "address": "0xFA000000"
             }
         ]
     }
